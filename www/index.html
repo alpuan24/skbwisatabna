@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+   
+    <!-- Fokus pada bagian di bawah ini. -->
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src *;
+               script-src 'self' 'unsafe-inline' 'unsafe-eval'
+                           127.0.0.1:*
+                           http://*.google.com
+                           http://*.gstatic.com
+                           http://*.googleapis.com
+                           http://*.firebaseio.com
+                           https://*.google.com
+                           https://*.gstatic.com
+                           https://*.googleapis.com
+                           https://*.firebaseio.com
+                           https://*.bootstrapcdn.com
+                           ;
+               style-src  'self' 'unsafe-inline'
+                          127.0.0.1
+                           http://*.google.com
+                           http://*.gstatic.com
+                           http://*.googleapis.com
+                           http://*.firebaseio.com
+                           https://*.google.com
+                           https://*.gstatic.com
+                           https://*.googleapis.com
+                           https://*.firebaseio.com
+                           https://*.bootstrapcdn.com" />
+    <!-- untuk memberikan hak akses ke situs mana saja yang dapat mengaksesnya -->
+
+    <link rel="stylesheet" type="text/css" href="css/wisata.css" />
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+    <title>Wisata </title>
+</head>
+
+<body>
+    <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+      <p>Banjarnegara buka kota sepi. Beragam event wisata sudah menunggu. <b>Ayo kunjungi Banjarnegara ... !<b></p>
+      <button class='btn btn-primary form-control'>Lihat Event Tahun Ini</button>
+      <div>
+      <input class='form-control' id='cariEvent' placeholder="Cari Event" />
+      </div>
+      <!--untuk menambnag event dan ubah event-->
+      <div>
+      <a class='btn btn-success form-control' href="formTambah.html">Tambah Event</a>
+      </div>
+
+      <div>
+      <a class='btn btn-success form-control' href="formUpdate.html">Ubah Event</a>
+      </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-sm-12">
+    <div id="dftEvent"></div>
+  </div>
+  </div>
+</body>
+
+</html>

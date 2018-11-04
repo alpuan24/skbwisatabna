@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WISATA BANJARNEGARA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
+  <style>
+	#dftEvent{
+		width: 80%; margin: auto;
+	}
+	#dftEvent > table.tblEvent {
+		width: 100%;
+		text-align: center;
+		margin: 20px 0;  
+	}
+  
+	.nmEvent{ font-size: 16px; font-weight: bold; }
+	.dsEvent{ font-size: 12px; font-style: italic;}
+	.tgEvent{ 
+		text-align: right; 
+		padding-right: 20px; 
+		width: 50%;
+		font-family: monospace;
+	}
+	.tkEvent{ 
+		text-align: left; 
+		padding-left: 20px;
+		width: 50%;
+		font-family: monospace;
+	}
+	
+	.lkEvent{ font-family: serif; }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+	  <div class="row">
+	    <div class="col-sm-12">
+			<p>Banjarnegara buka kota sepi. Beragam event wisata sudah menunggu. <b>Ayo kunjungi Banjarnegara ... !<b></p>
+			<button class='btn btn-primary form-control'>Lihat Event Tahun Ini</button>
+			<div>
+			<input class='form-control' id='cariEvent' placeholder="Cari Event" />
+			</div>
+	    </div>
+	  </div>
+  </div>
+  <div class="row">
+	<div class="col-sm-12">
+		<div id="dftEvent"></div>
+	</div>
+  </div>
+</body>
+</html>
